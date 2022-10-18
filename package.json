@@ -5,7 +5,7 @@
     "build": "vite build && zola build",
     "watch:vite": "vite",
     "watch:zola": "zola serve",
-    "watch": "concurrently --kill-others-on-fail -c 'yellow,green' --names='zola,vite' 'npm:watch:zola' 'npm:watch:vite'"
+    "watch": "conc -c 'yellow,green' -n 'zola,vite' 'npm:watch:zola' 'npm:watch:vite'"
   },
   "dependencies": {
     "bootstrap": "^5.2.2",

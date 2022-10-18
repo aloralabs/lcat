@@ -28,3 +28,5 @@ import carousel from './components/carousel';
 // import subscriptionForm from './components/subscription-form';
 // import hoverAnimation from './components/hover-animation';
 // import audioPlayer from './components/audio-player';
+
+carousel();

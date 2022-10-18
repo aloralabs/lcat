@@ -3,6 +3,7 @@
  * @requires https://github.com/nolimits4web/swiper
 */
 
+console.log('test');
 const carousel = (() => {
 
   // forEach function
@@ -15,6 +16,7 @@ const carousel = (() => {
   // Carousel initialisation
   let carousels = document.querySelectorAll('.swiper');
   forEach(carousels, (index, value) => {
+    console.log('swiper');
     
     let userOptions,
         pagerOptions;

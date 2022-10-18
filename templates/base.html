@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="{{ get_url(path='theme.css', cachebust=true) }}">
 </head>
 <body>
-    {% include "partials/header.html" %}
-    {% block content %}{% endblock content %}
+    {% include "partials/nav.html" %}
+    <main class="page-wrapper">
+        {% block content %}{% endblock content %}
+    </main>
     {% include "partials/footer.html" %}
     {% include "partials/scripts.html" %}
 </body>

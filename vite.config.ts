@@ -3,9 +3,9 @@ import { resolve } from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    clearScreen: false,
     appType: "custom",
-    publicDir: resolve("public"),
+    clearScreen: false,
+    publicDir: false,
     build: {
         lib: {
             fileName: "script",
@@ -19,5 +19,4 @@ export default defineConfig({
     server: {
         port: 8001,
     },
-})
-;
+});

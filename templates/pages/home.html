@@ -6,7 +6,7 @@
 <section class="position-relative pt-5">
 
     <!-- Background -->
-    <div class="position-absolute top-0 start-0 w-100 bg-position-bottom-center bg-size-cover bg-repeat-0" style="background-image: url(assets/img/about/hero-bg.svg);">
+    <div class="position-absolute top-0 start-0 w-100 bg-position-bottom-center bg-secondary">
         <div class="d-lg-none" style="height: 960px;"></div>
         <div class="d-none d-lg-block" style="height: 768px;"></div>
     </div>
@@ -28,7 +28,7 @@
                 <h3 class="display-4 pb-md-2 pb-lg-4">Accounting and tax experts helping you reach your financial goals. </h3>
                 <p class="fs-xl pb-4 mb-1 mb-md-2 mb-lg-3" style="max-width: 526px;">Get started with a free consultation!</p>
 
-                <a href="#" class="btn btn-lg btn-primary w-100 w-sm-auto">
+                <a href="/contact/" class="btn btn-lg btn-primary w-100 w-sm-auto">
                     Book today
                     <i class="bx bx-right-arrow-alt lead ms-2 me-n1"></i>
                 </a>
@@ -394,8 +394,12 @@
 <section class="bg-secondary py-5">
     <div class="container text-center py-1 py-md-4 py-lg-5">
         <h2 class="h1 mb-4">Ready to Get Started?</h2>
-        <p class="lead pb-3 mb-3">Reach out for a free consultation!</p>
-        <a href="/contact" class="btn btn-primary shadow-primary btn-lg mb-1">Get started</a>
+        <p class="lead pb-3 mb-3">Schedule a free consultation.</p>
+
+        <!-- Calendly link widget begin -->
+<a href="" class="btn btn-primary shadow-primary btn-lg mb-1" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ryan-gor'});return false;">Book now</a>
+<!-- Calendly link widget end -->
+
     </div>
 </section>
 

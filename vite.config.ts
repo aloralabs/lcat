@@ -12,7 +12,7 @@ export default defineConfig({
             entry: resolve("scripts", "main.ts"),
             formats: ["cjs"],
         },
-        outDir: resolve("public"),
+        outDir: resolve("static"),
         emptyOutDir: false,
         assetsDir: "",
     },

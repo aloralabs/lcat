@@ -1,4 +1,4 @@
 ---
-template: contact.html
+template: pages/contact.html
 ---
 

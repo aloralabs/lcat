@@ -1,3 +1,3 @@
 ---
-template: services.html
+template: pages/services.html
 ---

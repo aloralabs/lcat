@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8.4.4/swiper-bundle.min.css">
 </head>
 <body>
+    {% include "partials/header.html" %}
     {% block content %}{% endblock content %}
     {% include "partials/footer.html" %}
+    {% include "partials/scripts.html" %}
 </body>
 </html>

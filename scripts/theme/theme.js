@@ -8,7 +8,7 @@
 */
 
 // import themeModeSwitch from './components/theme-mode-switch';
-// import stickyNavbar from './components/sticky-navbar';
+import stickyNavbar from './components/sticky-navbar';
 // import smoothScroll from './components/smooth-scroll';
 // import scrollTopButton from './components/scroll-top-button';
 // import passwordVisibilityToggle from './components/password-visibility-toggle';

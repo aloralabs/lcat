@@ -1,0 +1,3 @@
+---
+template: pages/services.html
+---

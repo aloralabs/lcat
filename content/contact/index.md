@@ -1,0 +1,4 @@
+---
+template: pages/contact.html
+---
+

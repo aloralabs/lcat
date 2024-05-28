@@ -9,8 +9,12 @@
   },
   "dependencies": {
     "bootstrap": "^5.2.2",
-    "concurrently": "^6.2.1",
+    "concurrently": "^8.2.2",
+    "sass": "^1.77.2",
     "typescript": "^4.8.4",
-    "vite": "^3.1.8"
+    "vite": "^5.2.11"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12"
   }
 }

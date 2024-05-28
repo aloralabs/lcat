@@ -21,7 +21,8 @@
     <div class="row">
         <div class="col-md-6 pb-2 pb-md-0 mb-4 mb-md-0">
             <div class="pe-lg-5">
-                <img src="/assets/img/services/service01.jpg" class="rounded-3" alt="Image">
+                {% set image = resize_image(path=current_path~"IMG_5371.jpg", width=588, height=533, op="fill", format="webp", quality=75) %}
+                <img src="{{ image.url }}" class="rounded-3" alt="Image">
             </div>
         </div>
         <div class="col-md-6">
@@ -74,7 +75,8 @@
     <div class="row">
         <div class="col-md-6 order-md-2 pb-2 pb-md-0 mb-4 mb-md-0">
             <div class="ps-lg-5">
-                <img src="/assets/img/services/service02.jpg" class="rounded-3" alt="Image">
+                {% set image = resize_image(path=current_path~"IMG_5309.jpg", width=588, height=533, op="fill", format="webp", quality=75) %}
+                <img src="{{ image.url }}" class="rounded-3" alt="Image">
             </div>
         </div>
         <div class="col-md-6 ordr-md-1">
@@ -131,7 +133,8 @@
     <div class="row">
         <div class="col-md-6 pb-2 pb-md-0 mb-4 mb-md-0">
             <div class="pe-lg-5">
-                <img src="/assets/img/services/service03.jpg" class="rounded-3" alt="Image">
+                {% set image = resize_image(path=current_path~"IMG_5347.jpg", width=588, height=533, op="fill", format="webp", quality=75) %}
+                <img src="{{ image.url }}" class="rounded-3" alt="Image">
             </div>
         </div>
         <div class="col-md-6">

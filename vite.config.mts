@@ -1,22 +1,20 @@
 import { defineConfig } from "vite";
 import { resolve } from "path";
 
-// https://vitejs.dev/config/
 export default defineConfig({
-    appType: "custom",
-    clearScreen: false,
-    publicDir: false,
-    build: {
-        lib: {
-            fileName: "script",
-            entry: resolve("scripts", "main.ts"),
-            formats: ["cjs"],
-        },
-        outDir: resolve("static"),
-        emptyOutDir: false,
-        assetsDir: "",
+  clearScreen: false,
+  publicDir: false,
+  build: {
+    manifest: false,
+    rollupOptions: {
+      input: resolve("scripts", "main.ts"),
+      output: {
+        entryFileNames: "[name].js",
+        assetFileNames: "[name].[ext]"
+      },
     },
-    server: {
-        port: 8001,
-    },
+    outDir: resolve("static"),
+    emptyOutDir: false,
+    assetsDir: "",
+  }
 });

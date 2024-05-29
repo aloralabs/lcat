@@ -2,24 +2,24 @@ staff:
   - name: Lior Levy
     position: Founder
     image: staff/lior.jpg
-    linkedin: 
+    linkedin: https://www.linkedin.com/in/lior-levy-cpa-ca-lpa-bsc-43507921/
 
   - name: Karl Kim
-    position: X
+    position: CPA
     image: staff/karl.jpg
 
   - name: X
-    position: X
+    position: CPA
     image: staff/IMG_5301.jpg
 
   - name: X
-    position: X
+    position: CPA
     image: staff/IMG_5296.jpg
 
   - name: X
-    position: X
+    position: CPA
     image: staff/IMG_5393.jpg
 
   - name: X
-    position: X
+    position: CPA
     image: staff/IMG_5284.jpg

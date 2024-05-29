@@ -2,19 +2,19 @@ import { defineConfig } from "vite";
 import { resolve } from "path";
 
 export default defineConfig({
-  clearScreen: false,
-  publicDir: false,
   build: {
     manifest: false,
     rollupOptions: {
-      input: resolve("scripts", "main.ts"),
+      input: resolve("scripts", "main.js"),
       output: {
         entryFileNames: "[name].js",
-        assetFileNames: "[name].[ext]"
       },
     },
+    minify: true,
     outDir: resolve("static"),
     emptyOutDir: false,
     assetsDir: "",
-  }
+  },
+  publicDir: false,
+  clearScreen: false,
 });

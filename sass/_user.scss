@@ -3,3 +3,12 @@
 // Use this to write your custom SCSS
 //
 
+.attribution {
+    filter: grayscale(1);
+    color: var(--si-gray-600);
+}
+
+.attribution:hover {
+    filter: none;
+    color: var(--si-gray-700);
+}

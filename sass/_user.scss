@@ -12,3 +12,7 @@
     filter: none;
     color: var(--si-gray-700);
 }
+
+.ease {
+    transition: transform 0.2s ease;
+}

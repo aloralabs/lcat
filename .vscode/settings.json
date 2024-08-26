@@ -1,10 +1,10 @@
 {
-  "search.exclude": {
-    "static/*.js": true,
-    "static/*.css": true,
-  },
+  "search.exclude": {},
   "files.exclude": {
     "node_modules": true,
-    "public": true
+    "public": true,
+    "static/processed_images": true,
+    "static/*.js": true,
+    "static/*.css": true
   }
 }

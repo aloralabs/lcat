@@ -50,16 +50,22 @@
             </div>
 
             <!-- Images -->
-            <div class="col-lg-6 mt-xl-3 pt-5 pt-lg-4">
+            <div class="col-lg-6 mt-xl-3">
                 <div class="row row-cols-2 gx-3 gx-lg-4">
                     <div class="col pt-lg-5 mt-lg-1">
-                        <img src="/assets/img/about/hero/01.jpg" class="d-block rounded-3 mb-3 mb-lg-4" alt="Image">
-                        <img src="/assets/img/about/hero/02.jpg" class="d-block rounded-3" alt="Image">
+                        {% set img1 = resize_image(path=current_path~"hero/rutherford.jpg", width=500, height=500) %}
+                        <img src="{{ img1.url }}" class="d-block rounded-3 mb-3 mb-lg-4 h-100" alt="Office">
+
+                </div>
+                <div class="col">
+                        {% set img2 = resize_image(path=current_path~"hero/lior.jpg", width=500, height=600) %}
+                        <img src="{{ img2.url }}" class="d-block rounded-3 h-100" alt="Image">
                     </div>
-                    <div class="col">
-                        <img src="/assets/img/about/hero/03.jpg" class="d-block rounded-3 mb-3 mb-lg-4" alt="Image">
-                        <img src="/assets/img/about/hero/04.jpg" class="d-block rounded-3" alt="Image">
-                    </div>
+                    
+                </div>
+                <div class="pt-4">
+                    {% set img3 = resize_image(path=current_path~"hero/team.jpg", width=800, height=400) %}
+                    <img src="{{ img3.url }}" class="d-block rounded-3 mb-3 mb-lg-4" alt="Image">
                 </div>
             </div>
         </div>
@@ -124,45 +130,6 @@
         <div class="swiper-pagination position-relative pt-2 pt-sm-3 mt-4"></div>
     </div>
 </section>
-
-
-<!-- Awards -->
-<!-- <section class="container mb-5 pb-3 pb-md-4 pb-lg-5">
-    <div class="row gy-4 py-xl-2">
-        <div class="col-md-4">
-            <h2 class="mb-0 text-md-start text-center">Proudly working with</h2>
-        </div>
-        <div class="col-lg-7 offset-lg-1 col-md-8">
-            <div class="row row-cols-sm-4 row-cols-2 gy-4">
-                <div class="col">
-                    <div class="position-relative text-center">
-                        <img src="/assets/img/landing/digital-agency/awards/webby.svg" width="100" alt="Webby" class="d-block mx-auto mb-3">
-                        <a href="#" class="text-body justify-content-center fs-sm stretched-link text-decoration-none">Company ABC</a>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="position-relative text-center">
-                        <img src="/assets/img/landing/digital-agency/awards/cssda.svg" width="100" alt="CSSDA" class="d-block mx-auto mb-3">
-                        <a href="#" class="text-body justify-content-center fs-sm stretched-link text-decoration-none">Company XYZ</a>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="position-relative text-center">
-                        <img src="/assets/img/landing/digital-agency/awards/awwwards.svg" width="100" alt="Awwwards" class="d-block mx-auto mb-3">
-                        <a href="#" class="text-body justify-content-center fs-sm stretched-link text-decoration-none">Company 123</a>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="position-relative text-center">
-                        <img src="/assets/img/landing/digital-agency/awards/fwa.svg" width="100" alt="FWA" class="d-block mx-auto mb-3">
-                        <a href="#" class="text-body justify-content-center fs-sm stretched-link text-decoration-none">Company 321</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>-->
-
 
 <!-- Testimonials -->
 <section class="container">
@@ -263,8 +230,6 @@
         </div>
     </div>
 </section>
-
-
 
 <!-- Team -->
 {% include "partials/team.html" %}

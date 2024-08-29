@@ -1,16 +1,14 @@
 /**
  * Mouse move parallax effect
  * @requires https://github.com/wagerfield/parallax
-*/
+ */
 
-const parallax = (() => {
-
-  let element = document.querySelectorAll('.parallax');
+export default (() => {
+  const element = document.querySelectorAll('.parallax')
 
   for (let i = 0; i < element.length; i++) {
-    let parallaxInstance = new Parallax(element[i]);
+    /* eslint-disable no-unused-vars, no-undef */
+    const parallaxInstance = new Parallax(element[i])
+    /* eslint-enable no-unused-vars, no-undef */
   }
-
-})();
-
-export default parallax;
+})()

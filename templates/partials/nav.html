@@ -3,7 +3,7 @@
 <header class="header navbar navbar-expand-lg navbar-sticky">
     <div class="container px-3">
         <a href="/" class="navbar-brand pe-3">
-            <img src="/assets/img/levy-logo.png" width="240" alt="Levy Consulting, Accounting & Tax">
+            <img src="{{ get_url(path='logo-white.png') }}" draggable="false" width="200" alt="Levy Consulting, Accounting & Tax">
         </a>
         <div id="navbarNav" class="offcanvas offcanvas-end">
             <div class="offcanvas-header border-bottom">
@@ -15,14 +15,14 @@
                     <li class="nav-item">
                         <a href="/services/" class="nav-link">Services</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="/contact/" class="nav-link">Contact Us</a>
+                    </li>
                 </ul>
             </div>
         </div>
         <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a href="/contact" class="btn btn-primary btn-sm fs-sm rounded d-none d-lg-inline-flex" rel="noopener">
-            &nbsp;Contact Us
-        </a>
     </div>
 </header>

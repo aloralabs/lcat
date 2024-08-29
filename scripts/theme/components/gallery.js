@@ -1,21 +1,20 @@
 /**
  * Gallery like styled lightbox component for presenting various types of media
  * @requires https://github.com/sachinchoolur/lightGallery
-*/
+ */
 
-const gallery = (() => {
-
-  let gallery = document.querySelectorAll('.gallery');
+export default (() => {
+  const gallery = document.querySelectorAll('.gallery')
 
   if (gallery.length) {
     for (let i = 0; i < gallery.length; i++) {
-
+      /* eslint-disable no-undef */
       const thumbnails = gallery[i].dataset.thumbnails ? true : false,
-            video = gallery[i].dataset.video ? true : false,
-            defaultPlugins = [lgZoom, lgFullscreen],
-            videoPlugin = video ? [lgVideo] : [],
-            thumbnailPlugin = thumbnails ? [lgThumbnail] : [],
-            plugins = [...defaultPlugins, ...videoPlugin, ...thumbnailPlugin]
+        video = gallery[i].dataset.video ? true : false,
+        defaultPlugins = [lgZoom, lgFullscreen],
+        videoPlugin = video ? [lgVideo] : [],
+        thumbnailPlugin = thumbnails ? [lgThumbnail] : [],
+        plugins = [...defaultPlugins, ...videoPlugin, ...thumbnailPlugin]
 
       lightGallery(gallery[i], {
         selector: '.gallery-item',
@@ -27,16 +26,15 @@ const gallery = (() => {
         youtubePlayerParams: {
           modestbranding: 1,
           showinfo: 0,
-          rel: 0
+          rel: 0,
         },
         vimeoPlayerParams: {
           byline: 0,
           portrait: 0,
-          color: '6366f1'
-        }
-      });
+          color: '6366f1',
+        },
+      })
+      /* eslint-enable no-undef */
     }
   }
-})();
-
-export default gallery;
+})()

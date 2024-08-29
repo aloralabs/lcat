@@ -1,14 +1,12 @@
 /**
  * Toast
  * @requires https://getbootstrap.com
-*/
+ */
 
-const toast = (() => {
+export default (() => {
+  const toastElList = [].slice.call(document.querySelectorAll('.toast'))
 
-  let toastElList = [].slice.call(document.querySelectorAll('.toast'));
-
-  let toastList = toastElList.map((toastEl) => new bootstrap.Toast(toastEl));
-
-})();
-
-export default toast;
+  /* eslint-disable no-unused-vars, no-undef */
+  const toastList = toastElList.map((toastEl) => new bootstrap.Toast(toastEl))
+  /* eslint-enable no-unused-vars, no-undef */
+})()

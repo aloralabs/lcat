@@ -1,10 +1,8 @@
 <section class="container py-5 my-md-3 my-lg-5">
     <h2 class="h1 text-center pt-1 pb-3 mb-3 mb-lg-4">Our Team</h2>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
-
     {% set data = load_data(path=current_path~"staff.yml") %}
     {% for person in data.staff %}
-    <!-- Item -->
     <div class="col">
         <div class="card card-hover border-0 bg-transparent">
             <div class="position-relative">
@@ -28,4 +26,5 @@
         </div>
     </div>
     {% endfor %}
+    </div>
 </section>

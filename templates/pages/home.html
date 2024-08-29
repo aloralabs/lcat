@@ -16,13 +16,6 @@
         <div class="row">
             <div class="col-lg-6">
 
-                <!-- Breadcrumb -->
-                <nav class="pt-md-2 pt-lg-3 pb-4 pb-md-5 mb-xl-4" aria-label="breadcrumb">
-                    <ol class="breadcrumb mb-0">
-
-                    </ol>
-                </nav>
-
                 <!-- Text -->
                 <h1 class="fs-xl text-uppercase">More than just accountants.</h1>
                 <h3 class="display-4 pb-md-2 pb-lg-4">Accounting and tax experts helping you reach your financial goals. </h3>
@@ -50,18 +43,16 @@
             </div>
 
             <!-- Images -->
-            <div class="col-lg-6 mt-xl-3">
+            <div class="col-lg-6 mt-5 mt-lg-0">
                 <div class="row row-cols-2 gx-3 gx-lg-4">
                     <div class="col pt-lg-5 mt-lg-1">
                         {% set img1 = resize_image(path=current_path~"hero/rutherford.jpg", width=500, height=500) %}
                         <img src="{{ img1.url }}" class="d-block rounded-3 mb-3 mb-lg-4 h-100" alt="Office">
-
-                </div>
-                <div class="col">
+                    </div>
+                    <div class="col">
                         {% set img2 = resize_image(path=current_path~"hero/lior.jpg", width=500, height=600) %}
                         <img src="{{ img2.url }}" class="d-block rounded-3 h-100" alt="Image">
                     </div>
-                    
                 </div>
                 <div class="pt-4">
                     {% set img3 = resize_image(path=current_path~"hero/team.jpg", width=800, height=400) %}
@@ -173,7 +164,6 @@
                     }'>
                     <div class="swiper-wrapper">
 
-
                         <!-- Item -->
                         <div class="swiper-slide h-auto">
                             <figure class="card h-100 position-relative border-0 bg-transparent">
@@ -181,7 +171,7 @@
                                     <p class="fs-lg mb-0">Working with Lior has been a pleasure. He goes above and beyond to help us with all our needs. He handles everything related to our corporate finances and we highly recommend his services.</p>
                                 </blockquote>
                                 <figcaption class="card-footer border-0 d-flex align-items-center w-100 pb-2">
-                                    <img src="/assets/img/avatar/ryangor.jpg" width="60" class="rounded-circle" alt="Ralph Edwards">
+                                    <img src="/images/avatar/ryangor.jpg" width="60" class="rounded-circle" alt="Ralph Edwards">
                                     <div class="ps-3">
                                         <h6 class="fw-semibold lh-base mb-0">Ryan Gor</h6>
                                         <span class="fs-sm text-muted">Founding Partner at Alora Labs</span>
@@ -197,7 +187,7 @@
                                     <p class="fs-lg mb-0">The personal financial advice I received was exceptional. The team took the time to understand my unique situation and crafted a plan that truly fits my needs. Their expertise and attention to detail have made a significant difference in my financial stability and growth. Highly recommended!</p>
                                 </blockquote>
                                 <figcaption class="card-footer border-0 d-flex align-items-center w-100 pb-2">
-                                    <img src="/assets/img/avatar/14.jpg" width="60" class="rounded-circle" alt="Annette Black">
+                                    <img src="/images/avatar/14.jpg" width="60" class="rounded-circle" alt="Annette Black">
                                     <div class="ps-3">
                                         <h6 class="fw-semibold lh-base mb-0">Annette Black</h6>
                                         <span class="fs-sm text-muted">Strategic Advisor at Company LLC</span>
@@ -213,7 +203,7 @@
                                     <p class="fs-lg mb-0">Working with Lior has been a game-changer for my investments. Their strategic advice and personalized approach have helped me achieve my financial goals more efficiently. I appreciate their dedication and the clear, actionable guidance they provide. I couldn't be happier with the results!</p>
                                 </blockquote>
                                 <figcaption class="card-footer border-0 d-flex align-items-center w-100 pb-2">
-                                    <img src="/assets/img/avatar/11.jpg" width="60" class="rounded-circle" alt="Darrell Steward">
+                                    <img src="/images/avatar/11.jpg" width="60" class="rounded-circle" alt="Darrell Steward">
                                     <div class="ps-3">
                                         <h6 class="fw-semibold lh-base mb-0">Darrell Steward</h6>
                                         <span class="fs-sm text-muted">Project Manager at Ipsum Ltd.</span>
@@ -257,9 +247,8 @@
         <p class="lead pb-3 mb-3">Schedule a free consultation.</p>
 
         <!-- Calendly link widget begin -->
-<a href="" class="btn btn-primary shadow-primary btn-lg mb-1" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ryan-gor'});return false;">Book now</a>
-<!-- Calendly link widget end -->
-
+        <a href="" class="btn btn-primary shadow-primary btn-lg mb-1">Book now</a>
+        <!-- Calendly link widget end -->
     </div>
 </section>
 

@@ -3,17 +3,13 @@ import { resolve } from "path";
 
 export default defineConfig({
   build: {
-    manifest: false,
     rollupOptions: {
       input: resolve("scripts", "main.js"),
       output: {
         entryFileNames: "[name].js",
       },
     },
-    minify: true,
-    outDir: resolve("static"),
-    emptyOutDir: false,
-    assetsDir: "",
+    outDir: resolve("static", "build"),
   },
   publicDir: false,
   clearScreen: false,
